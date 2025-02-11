@@ -2,16 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "styles/variables/index.css";
+
 :root {
   --primitive-key-color-sakaguchi-brown: #724319;
   --primitive-key-color-sakaguchi-ivory: #F9EFE6;
   --primitive-key-color-sakaguchi-pink: #DC8296;
   --primitive-key-color-sakaguchi-green: #7E9566;
-  --primitive-white: #FFF;
-  --primitive-black: #000;
+
 }
 
 body {
   color: var(--primitive-black);
-  background: var(--primitive-key-color-sakaguchi-brown);
+  background: var(--color-primary);
 }
