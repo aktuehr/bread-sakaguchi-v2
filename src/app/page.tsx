@@ -1,7 +1,9 @@
+import BusinessHourInfoSection from "./features/BusinessHourInfoSection";
+
 export default function Home() {
   return (
     <main>
-      Hello.
+      <BusinessHourInfoSection />
     </main>
   );
 }
