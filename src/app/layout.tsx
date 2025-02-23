@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { M_PLUS_1p } from "next/font/google";
 import "./globals.css";
 import Header from '@/app/features/Header';
+import Footer from "@/app/features/Footer";
 
 const mPlus1p = M_PLUS_1p({ weight: ['400', '700'], subsets: ['latin'], variable: '--font-m-plus-1p'});
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={mPlus1p.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
