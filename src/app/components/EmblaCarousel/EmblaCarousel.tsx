@@ -2,16 +2,22 @@
 
 import React from 'react';
 import useEmblaCarousel, { UseEmblaCarouselType } from 'embla-carousel-react';
+import type { EmblaOptionsType } from 'embla-carousel';
 import Fade from 'embla-carousel-fade';
 import styles from './EmblaCarousel.module.css';
 
 interface EmblaCarouselProps {
   slides: React.ReactNode[];
+  options: EmblaOptionsType;
 }
 
-const EmblaCarousel: React.FC<EmblaCarouselProps> = ({ slides }) => {
+const defaultOptions: EmblaOptionsType = {
+  loop: true
+}
+
+const EmblaCarousel: React.FC<EmblaCarouselProps> = ({ slides, options = defaultOptions }) => {
   // 一旦 unknown としてから期待する型にキャストする
-  const [emblaRef, embla] = useEmblaCarousel({ loop: true }, [Fade()]) as unknown as [
+  const [emblaRef, embla] = useEmblaCarousel(options, [Fade()]) as unknown as [
     React.RefObject<HTMLDivElement>,
     UseEmblaCarouselType | null
   ];
