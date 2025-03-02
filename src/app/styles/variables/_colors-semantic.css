@@ -3,7 +3,9 @@
 :root {
   /* テーマカラー */
   --color-primary: var(--primitive-brown-600);
+  --color-primary-op50: var(--primitive-brown-600-op50);
   --color-secondary: var(--primitive-ivory-50);
+  --color-secondary-op50: var(--primitive-ivory-50-op50);
   --color-accent-pink: var(--primitive-pink-200);
   --color-accent-green: var(--primitive-green-700);
 
