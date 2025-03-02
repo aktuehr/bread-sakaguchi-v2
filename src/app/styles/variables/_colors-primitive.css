@@ -1,6 +1,16 @@
 :root {
+
   /* モノクロ */
   --primitive-white: #FFF;
+  --primitive-white-op10: #FFFFFF1A;
+  --primitive-white-op20: #FFFFFF33;
+  --primitive-white-op30: #FFFFFF4D;
+  --primitive-white-op40: #FFFFFF66;
+  --primitive-white-op50: #FFFFFF80;
+  --primitive-white-op60: #FFFFFF99;
+  --primitive-white-op70: #FFFFFFB3;
+  --primitive-white-op80: #FFFFFFCC;
+  --primitive-white-op90: #FFFFFFE6;
   --primitive-black: #000;
   --primitive-gray-100: #E8E8E8;
   --primitive-gray-200: #D1D1D1;
@@ -14,6 +24,7 @@
 
   /* アイボリー */
   --primitive-ivory-50: #F9EFE6;
+  --primitive-ivory-50-op50: #F9EFE680;
   --primitive-ivory-100: #E8D7CB;
   --primitive-ivory-200: #D4BDAE;
   --primitive-ivory-300: #BEA28F;
@@ -67,6 +78,7 @@
   --primitive-brown-400: #95653B;
   --primitive-brown-500: #7D4C1E;
   --primitive-brown-600: #724319;
+  --primitive-brown-600-op50: #72431980;
   --primitive-brown-700: #633611;
   --primitive-brown-800: #56290A;
   --primitive-brown-900: #471B00;

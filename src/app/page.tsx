@@ -31,14 +31,15 @@ export default function Home() {
     },
   ];
   const slides = carouselImageInfo.map((info) => [
-    <div className="relative w-full pt-[66.67%]">      
+    <div className="relative w-full">      
       <Image 
         src={info.src}
         alt={info.alt}
         priority={info.priority}
-        fill
-        style={{ objectFit: 'cover'}}
-        />,
+        width={768}
+        height={512}
+        style={{ objectFit: 'cover', width: 'fill', height: 'auto' }}
+        />
     </div>
   ]);
 
