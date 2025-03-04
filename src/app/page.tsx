@@ -44,7 +44,7 @@ export default function Home() {
   ]);
 
   return (
-    <main className="max-w-3xl bg-background-primary">
+    <main className="max-w-3xl bg-background-primary mx-auto">
       <BusinessHourInfoSection />
       <EmblaCarousel
         slides={slides}
