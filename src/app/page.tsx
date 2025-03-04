@@ -44,11 +44,17 @@ export default function Home() {
   ]);
 
   return (
-    <main>
+    <main className="max-w-3xl bg-background-primary">
       <BusinessHourInfoSection />
       <EmblaCarousel
         slides={slides}
       />
+      <div className="p-4">
+        <p>
+          1985年に泉北・御池台にオープンして以来、お子様からご年配の方まで多くのお客様に愛していただいています。<br />
+          朝6時のオープンから次々とパンが焼き上がっていき、1日のうちに、定番商品から新作の限定商品も含めて、100種類以上のパンを焼き上げています。新作パンは季節感を第一に試作を重ねたものを焼き上げています。新しいパンの情報は最新情報(Instagram/Facebook)をチェックしてください。
+        </p>
+      </div>
     </main>
   );
 }
