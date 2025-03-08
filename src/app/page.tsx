@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { EmblaCarousel } from "./components/EmblaCarousel";
 import BusinessHourInfoSection from "./features/BusinessHourInfoSection";
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 export default function Home() {
   const carouselImageInfo = [
@@ -30,7 +32,14 @@ export default function Home() {
       priority: false,
     },
   ];
-  const slides = carouselImageInfo.map((info) => [
+
+  const temporaryNoticeImages = [
+    {
+      src: "/bread-sakaguchi/img/temporary-notice/202503_point-card.png",
+      alt: "ポイントカードサービスについて、6/1から500円でシール1枚進呈、30枚貯まったら台紙提示で300円引きと変更させていただきます。",
+    },
+  ]
+  const slides = carouselImageInfo.map((info) =>
     <div className="relative w-full">      
       <Image 
         src={info.src}
@@ -41,7 +50,7 @@ export default function Home() {
         style={{ objectFit: 'cover', width: 'fill', height: 'auto' }}
         />
     </div>
-  ]);
+  );
 
   return (
     <main className="max-w-3xl bg-background-primary mx-auto">
@@ -55,6 +64,23 @@ export default function Home() {
           朝6時のオープンから次々とパンが焼き上がっていき、1日のうちに、定番商品から新作の限定商品も含めて、100種類以上のパンを焼き上げています。新作パンは季節感を第一に試作を重ねたものを焼き上げています。新しいパンの情報は最新情報(Instagram/Facebook)をチェックしてください。
         </p>
       </div>
+      {
+        temporaryNoticeImages &&
+        temporaryNoticeImages.map((info) =>
+          <div className="p-4 grid grid-cols-1 gap-4 bg-[var(--color-background-accent-pink)]">
+            <h2 className="font-bold text-[var(--color-text-accent-pink)]">臨時のお知らせ</h2>
+            <div className="mx-auto">
+              <Zoom>
+                <img
+                  src={info.src}
+                  alt={info.alt}
+                  className="max-w-sm"
+                  />
+              </Zoom>
+            </div>
+          </div>
+        )
+      }
     </main>
   );
 }
