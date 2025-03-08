@@ -13,10 +13,12 @@
   --color-text-primary: var(--primitive-black);
   --color-text-secondary: var(--primitive-gray-700);
   --color-text-disabled: var(--primitive-gray-400);
+  --color-text-accent-pink: var(--primitive-pink-200);
 
   /* 背景色 */
   --color-background-primary: var(--primitive-white);
   --color-background-secondary: var(--primitive-ivory-50);
+  --color-background-accent-pink: var(--primitive-matrial-red-50);
 
   /* ステータス */
   --color-error: var(--primitive-matrial-red-500);
