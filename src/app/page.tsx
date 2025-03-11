@@ -100,8 +100,8 @@ export default function Home() {
             </p>
           </div>
         }
-        buttonText={'SAKAGUCHIのこだわり'}
-        buttonHref={'/'}
+        linkText={'SAKAGUCHIのこだわり'}
+        linkHref={'/'}
         rightIcon={<MaterialSymbol icon='chevron_right' size={24} />}
       />
     </main>
