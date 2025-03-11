@@ -6,6 +6,7 @@ import 'react-medium-image-zoom/dist/styles.css'
 import MenuSection from "./features/MenuSection";
 import { MaterialSymbol } from "react-material-symbols";
 import 'react-material-symbols/rounded';
+import { ROUTES } from "./constants/routes";
 
 export default function Home() {
   const carouselImageInfo = [
@@ -87,7 +88,7 @@ export default function Home() {
       <MenuSection
         title={'SAKAGUCHIのこだわり'}
         linkText={'SAKAGUCHIのこだわり'}
-        linkHref={'/'}
+        linkHref={ROUTES.ABOUT}
         rightIcon={<MaterialSymbol icon='chevron_right' size={24} />}
       >
         <div className="grid grid-cols-1 gap-4">
