@@ -86,24 +86,23 @@ export default function Home() {
       }
       <MenuSection
         title={'SAKAGUCHIのこだわり'}
-        contents={
-          <div className="grid grid-cols-1 gap-4">
-            <Image
-              src="/bread-sakaguchi/img/commitment.png"
-              alt="おいしさの秘密は「北海道産小麦」へのこだわり。SAKAGUCHIが作り上げた北海道ブランド小麦のオリジナルブレンド"
-              width={768}
-              height={265}
-            />
-            <p>
-              パンの命とも言える小麦は北海道産にこだわってブレンドしています。<br />
-              小麦についてや、パンを作り上げる上で重要となる製法についてご紹介します。
-            </p>
-          </div>
-        }
         linkText={'SAKAGUCHIのこだわり'}
         linkHref={'/'}
         rightIcon={<MaterialSymbol icon='chevron_right' size={24} />}
-      />
+      >
+        <div className="grid grid-cols-1 gap-4">
+          <Image
+            src="/bread-sakaguchi/img/commitment.png"
+            alt="おいしさの秘密は「北海道産小麦」へのこだわり。SAKAGUCHIが作り上げた北海道ブランド小麦のオリジナルブレンド"
+            width={768}
+            height={265}
+          />
+          <p>
+            パンの命とも言える小麦は北海道産にこだわってブレンドしています。<br />
+            小麦についてや、パンを作り上げる上で重要となる製法についてご紹介します。
+          </p>
+        </div>
+      </MenuSection>
     </main>
   );
 }
