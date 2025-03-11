@@ -119,6 +119,21 @@ export default function Home() {
           </p>
         </div>
       </MenuSection>
+      <MenuSection
+        title={'SAKAGUCHIへのアクセス'}
+        linkText={'SAKAGUCHIへのアクセス'}
+        linkHref={ROUTES.ACCESS}
+        rightIcon={<MaterialSymbol icon='chevron_right' size={24} />}
+      >
+        <div className="grid grid-cols-1 gap-4">
+          <p>
+            パン工房SAKAGUCHIは、御池台センターの中にあります。<br />
+            SAKAGUCHIへは車かバスが便利です。<br />
+            駐車場も専用駐車場の他、御池台センターと共用の駐車場がございます。<br />
+            具体的なアクセス方法や、地図・駐車場のご案内についての詳細はこちらからご確認ください。
+          </p>
+        </div>
+      </MenuSection>
     </main>
   );
 }
