@@ -13,18 +13,19 @@ export type LinkButtonProps = {
 
 const LinkButton: React.FC<LinkButtonProps> = (
   {
+    linkHref,
     linkText,
-    leftIcon = '',
-    rightIcon = ''
+    leftIcon,
+    rightIcon
   }
 ) => (
   <Link
-    href="/"
+    href={linkHref}
     className="px-4 py-2 bg-primary text-secondary font-extrabold rounded-lg inline-flex justify-center gap-1"
   >
-    {leftIcon}
+    {leftIcon && leftIcon}
     <span className="inline-flex items-center">{linkText}</span>
-    {rightIcon}
+    {rightIcon && rightIcon}
   </Link>
 )
 
