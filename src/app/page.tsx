@@ -104,6 +104,21 @@ export default function Home() {
           </p>
         </div>
       </MenuSection>
+      <MenuSection
+        title={'SAKAGUCHIのパン紹介'}
+        linkText={'SAKAGUCHIのパン紹介'}
+        linkHref={ROUTES.CATEGORY}
+        rightIcon={<MaterialSymbol icon='chevron_right' size={24} />}
+      >
+        <div className="grid grid-cols-1 gap-4">
+          <p>
+            SAKAGUCHIでは毎日100種類以上のパンを焼き上げています。<br />
+            ほぼ全てのパンが国産小麦のみを使用して焼き上げております。<br />
+            お食事のシーンにぴったりの食べ応えのあるパンから、おやつのシーンにぴったりな甘〜いパンなど、きっとその日の気分にマッチしたパンが見つかると思います。<br />
+            フランスパン・天然酵母のパン・サンドイッチなど、パンのジャンルに分けて紹介をしていますので、ご来店の際の参考にご覧ください。
+          </p>
+        </div>
+      </MenuSection>
     </main>
   );
 }
