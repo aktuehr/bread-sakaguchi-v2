@@ -6,6 +6,7 @@ import 'react-medium-image-zoom/dist/styles.css'
 import MenuSection from "./features/MenuSection";
 import { MaterialSymbol } from "react-material-symbols";
 import 'react-material-symbols/rounded';
+import { ROUTES } from "./constants/routes";
 
 export default function Home() {
   const carouselImageInfo = [
@@ -87,7 +88,7 @@ export default function Home() {
       <MenuSection
         title={'SAKAGUCHIのこだわり'}
         linkText={'SAKAGUCHIのこだわり'}
-        linkHref={'/'}
+        linkHref={ROUTES.ABOUT}
         rightIcon={<MaterialSymbol icon='chevron_right' size={24} />}
       >
         <div className="grid grid-cols-1 gap-4">
@@ -100,6 +101,49 @@ export default function Home() {
           <p>
             パンの命とも言える小麦は北海道産にこだわってブレンドしています。<br />
             小麦についてや、パンを作り上げる上で重要となる製法についてご紹介します。
+          </p>
+        </div>
+      </MenuSection>
+      <MenuSection
+        title={'SAKAGUCHIのパン紹介'}
+        linkText={'SAKAGUCHIのパン紹介'}
+        linkHref={ROUTES.CATEGORY}
+        rightIcon={<MaterialSymbol icon='chevron_right' size={24} />}
+      >
+        <div className="grid grid-cols-1 gap-4">
+          <p>
+            SAKAGUCHIでは毎日100種類以上のパンを焼き上げています。<br />
+            ほぼ全てのパンが国産小麦のみを使用して焼き上げております。<br />
+            お食事のシーンにぴったりの食べ応えのあるパンから、おやつのシーンにぴったりな甘〜いパンなど、きっとその日の気分にマッチしたパンが見つかると思います。<br />
+            フランスパン・天然酵母のパン・サンドイッチなど、パンのジャンルに分けて紹介をしていますので、ご来店の際の参考にご覧ください。
+          </p>
+        </div>
+      </MenuSection>
+      <MenuSection
+        title={'SAKAGUCHIへのアクセス'}
+        linkText={'SAKAGUCHIへのアクセス'}
+        linkHref={ROUTES.ACCESS}
+        rightIcon={<MaterialSymbol icon='chevron_right' size={24} />}
+      >
+        <div className="grid grid-cols-1 gap-4">
+          <p>
+            パン工房SAKAGUCHIは、御池台センターの中にあります。<br />
+            SAKAGUCHIへは車かバスが便利です。<br />
+            駐車場も専用駐車場の他、御池台センターと共用の駐車場がございます。<br />
+            具体的なアクセス方法や、地図・駐車場のご案内についての詳細はこちらからご確認ください。
+          </p>
+        </div>
+      </MenuSection>
+      <MenuSection
+        title={'SAKAGUCHIへのお電話'}
+        linkText={'SAKAGUCHIへのお電話'}
+        linkHref={ROUTES.INQUIRY}
+        rightIcon={<MaterialSymbol icon='chevron_right' size={24} />}
+      >
+        <div className="grid grid-cols-1 gap-4">
+          <p>
+            SAKAGUCHIへのお問い合わせや、パンのご予約はフリーダイヤルが便利です。<br />
+            お電話にあたっての詳細情報はこちらからご確認ください。
           </p>
         </div>
       </MenuSection>
