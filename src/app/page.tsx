@@ -7,6 +7,7 @@ import MenuSection from "./features/MenuSection";
 import { MaterialSymbol } from "react-material-symbols";
 import 'react-material-symbols/rounded';
 import { ROUTES } from "./constants/routes";
+import NewsListItem from "./features/NewsListItem";
 
 export default function Home() {
   const carouselImageInfo = [
@@ -147,6 +148,31 @@ export default function Home() {
           </p>
         </div>
       </MenuSection>
+      <div className="p-4">
+        <h2 className="font-bold text-primary">最新情報</h2>
+        <div className="flex gap-1">
+          <Image
+            src={'/bread-sakaguchi/img/instagram.png'}
+            width={150}
+            height={184}
+            style={{ width: '150px', height: '184px', objectFit: 'contain' }}
+            alt={"パン工房SAKAGUCHIのInstagramアカウントのQRコード"}
+            />
+          <div className="flex flex-col gap-1">
+            <div>最新情報はInstagramで随時更新しております。</div>
+            <div className="p-1 grid gap-1">
+              <NewsListItem emoji="🏠" emojiLabel="家の絵文字">店内・店頭の様子</NewsListItem>
+              <NewsListItem emoji="🥐" emojiLabel="クロワッサンの絵文字">新作パン・期間限定パンのご紹介</NewsListItem>
+              <NewsListItem emoji="🍞" emojiLabel="食パンの絵文字">各種人気パンのご紹介</NewsListItem>
+              <NewsListItem emoji="📅" emojiLabel="カレンダーの絵文字">連休や年末年始等の営業のお知らせ</NewsListItem>
+            </div>
+            <div>
+              など、営業日は毎朝更新しております。<br />
+              フォローよろしくお願いします。
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
