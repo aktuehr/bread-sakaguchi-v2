@@ -134,6 +134,19 @@ export default function Home() {
           </p>
         </div>
       </MenuSection>
+      <MenuSection
+        title={'SAKAGUCHIへのお電話'}
+        linkText={'SAKAGUCHIへのお電話'}
+        linkHref={ROUTES.INQUIRY}
+        rightIcon={<MaterialSymbol icon='chevron_right' size={24} />}
+      >
+        <div className="grid grid-cols-1 gap-4">
+          <p>
+            SAKAGUCHIへのお問い合わせや、パンのご予約はフリーダイヤルが便利です。<br />
+            お電話にあたっての詳細情報はこちらからご確認ください。
+          </p>
+        </div>
+      </MenuSection>
     </main>
   );
 }
