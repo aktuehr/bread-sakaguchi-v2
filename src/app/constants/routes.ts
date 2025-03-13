@@ -6,4 +6,7 @@ export const ROUTES = {
   CATEGORY: '/category' as Route,
   ACCESS: '/access' as Route,
   INQUIRY: '/inquiry' as Route,
+  TOPIC: {
+    ECOBAG: '/topic/eco-bag' as Route,
+  }
 } as const; 
