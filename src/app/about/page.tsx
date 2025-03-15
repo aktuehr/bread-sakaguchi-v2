@@ -1,5 +1,5 @@
 import { TitleAndContents } from '@/app/components/TitleAndContents';
-import DescriptionCard from '../components/DescriptionCard/DescriptionCard';
+import { DescriptionCard } from '@/app/components/DescriptionCard';
 
 export default function AboutPage() {
   return (
