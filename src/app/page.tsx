@@ -13,27 +13,27 @@ import Link from "next/link";
 export default function Home() {
   const carouselImageInfo = [
     {
-      src: "/bread-sakaguchi/img/carousel01.jpg",
+      src: "/img/carousel01.jpg",
       alt: "パン工房SAKAGUCHIのパンの写真",
       priority: true,
     },
     {
-      src: "/bread-sakaguchi/img/carousel02.jpg",
+      src: "/img/carousel02.jpg",
       alt: "パン工房SAKAGUCHIの店外写真",
       priority: false,
     },
     {
-      src: "/bread-sakaguchi/img/carousel03.jpg",
+      src: "/img/carousel03.jpg",
       alt: "パン工房SAKAGUCHIの店内の写真",
       priority: false,
     },
     {
-      src: "/bread-sakaguchi/img/carousel04.jpg",
+      src: "/img/carousel04.jpg",
       alt: "パン工房SAKAGUCHIの食パンの写真",
       priority: false,
     },
     {
-      src: "/bread-sakaguchi/img/carousel05.jpg",
+      src: "/img/carousel05.jpg",
       alt: "パン工房SAKAGUCHIの天然酵母ライ麦ブレッドの写真",
       priority: false,
     },
@@ -41,7 +41,7 @@ export default function Home() {
 
   const temporaryNoticeImages = [
     {
-      src: "/bread-sakaguchi/img/temporary-notice/202503_point-card.png",
+      src: "/img/temporary-notice/202503_point-card.png",
       alt: "ポイントカードサービスについて、6/1から500円でシール1枚進呈、30枚貯まったら台紙提示で300円引きと変更させていただきます。",
     },
   ]
@@ -95,7 +95,7 @@ export default function Home() {
       >
         <div className="grid grid-cols-1 gap-4">
           <Image
-            src="/bread-sakaguchi/img/commitment.png"
+            src="/img/commitment.png"
             alt="おいしさの秘密は「北海道産小麦」へのこだわり。SAKAGUCHIが作り上げた北海道ブランド小麦のオリジナルブレンド"
             width={768}
             height={265}
@@ -153,7 +153,7 @@ export default function Home() {
         <h2 className="font-bold text-primary">最新情報</h2>
         <div className="flex gap-1">
           <Image
-            src={'/bread-sakaguchi/img/instagram.png'}
+            src={'/img/instagram.png'}
             width={150}
             height={184}
             style={{ width: '150px', height: '184px', objectFit: 'contain' }}
@@ -177,7 +177,7 @@ export default function Home() {
         <Link href={ROUTES.TOPIC.ECOBAG}>    
           <div className="border border-primary rounded-lg overflow-hidden shadow-[0_2px_8px_0_rgba(0,0,0,0.4)] active:shadow-[0_1px_2px_0_rgba(0,0,0,0.4)] active:translate-y-0.5 transition-shadow duration-100">
             <Image
-              src={'/bread-sakaguchi/img/feature/eco-bag/eco-bag-banner.png'}
+              src={'/img/feature/eco-bag/eco-bag-banner.png'}
               width={364}
               height={121}
               style={{ width: '364px', height: '121px' }}
