@@ -1,0 +1,11 @@
+.section {
+  @apply text-lg grid gap-4 px-4;
+}
+
+.heading {
+  @apply font-bold text-lg text-primary;
+}
+
+.content {
+  @apply grid gap-2;
+} 
