@@ -34,7 +34,31 @@ export default function AboutPage() {
           </DescriptionCard>
         </div>
       </TitleAndContents>
-
+      <TitleAndContents title="低温でじっくり発酵させる「オーバーナイト法」">
+        <p>SAKAGUCHIのパンを作る工程で大事な「発酵」。この発酵を低温でじっくり24時間から72時間かけて行う「オーバーナイト法」でSAKAGUCHIのパンは作られています。</p>
+        <p>低温でじっくり発酵させる事で、もちもち感と酵母特有の風味が得られると言われており、フランスの個人経営の手作りパン屋さんの70%が「オーバーナイト法」で作っているそうです。</p>
+        <div className='flex flex-col gap-2'>
+          <DescriptionCard
+            title={'焼きたてのパンを次々とご提供できる'}
+            subTitle={'オーバーナイト法の利点①'}
+          >
+            ミキシング後のパン生地は、生地温度とイースト量を上手に調整すると、12時間から48時間は4℃の冷蔵庫で保存できます。<br />
+            パン生地はいつでも冷蔵庫から取り出して次の工程に進めるため、絶えず焼きたてのパンをご提供できます。
+          </DescriptionCard>
+          <DescriptionCard
+            title={'美しい見た目のパンになる'}
+            subTitle={'オーバーナイト法の利点②'}
+          >
+            生地が冷蔵庫で低温の状態にあるため、分割作業が行いやすくなり、生地に負担をかけることなく、見た目の美しいパンを安心してご提供できます。
+          </DescriptionCard>
+          <DescriptionCard
+            title={'外はクリスピー、中はふっくら'}
+            subTitle={'オーバーナイト法の利点③'}
+          >
+            パン生地の吸水率を上げる事ができ、外側がクリスピーで中はしっとりとした美味しいパンがご提供できます。
+          </DescriptionCard>
+        </div>
+      </TitleAndContents>
     </main>
   );
 }
