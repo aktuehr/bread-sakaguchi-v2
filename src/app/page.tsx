@@ -46,7 +46,7 @@ export default function Home() {
     },
   ]
   const slides = carouselImageInfo.map((info) =>
-    <div className="relative w-full">      
+    <div key={info.src} className="relative w-full">      
       <Image 
         src={info.src}
         alt={info.alt}
@@ -73,7 +73,7 @@ export default function Home() {
       {
         temporaryNoticeImages &&
         temporaryNoticeImages.map((info) =>
-          <div className="p-4 grid grid-cols-1 gap-4 bg-[var(--color-background-accent-pink)]">
+          <div key={info.src} className="p-4 grid grid-cols-1 gap-4 bg-[var(--color-background-accent-pink)]">
             <h2 className="font-bold text-[var(--color-text-accent-pink)]">臨時のお知らせ</h2>
             <div className="mx-auto">
               <Zoom>
