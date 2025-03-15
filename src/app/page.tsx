@@ -80,7 +80,7 @@ export default function Home() {
                 <img
                   src={info.src}
                   alt={info.alt}
-                  className="max-w-sm"
+                  className="max-w-xs"
                   />
               </Zoom>
             </div>
