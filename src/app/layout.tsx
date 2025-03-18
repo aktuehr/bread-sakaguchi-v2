@@ -28,7 +28,7 @@ export default function RootLayout({
       </Head>
       <body className={mPlus1p.className}>
         <div className="max-w-lg mx-auto min-w-[360px]">
-          <div className="origin-top-left scale-[calc(100vw/360)]">
+          <div className="bg-white origin-top-left scale-[calc(100vw/360)]">
             <Header />
             {children}
             <Footer />
