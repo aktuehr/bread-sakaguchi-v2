@@ -1,14 +1,5 @@
-import { ReactNode } from "react";
 
-export type Category = {
-  id: string;
-  name: string;
-  description: ReactNode;
-  image?: string;
-};
-
-// カテゴリのデータ
-export const categories: Category[] = [
+export const categories = [
   {
     id: "kashipan",
     name: "菓子パン",
@@ -130,6 +121,12 @@ export const categories: Category[] = [
       </>
     ),
   },
-];
+] as const;
+
 
 export type CategoryID = (typeof categories)[number]["id"];
+export type Categories = typeof categories;
+
+export const categoryIds = Object.fromEntries(
+  categories.map((category) => [category.id, category.id])
+) as Record<CategoryID, CategoryID>;
