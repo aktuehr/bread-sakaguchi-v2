@@ -75,7 +75,7 @@ export default function Home() {
         temporaryNoticeImages.map((info) =>
           <div key={info.src} className="p-4 grid grid-cols-1 gap-4 bg-[var(--color-background-accent-pink)]">
             <h2 className="font-bold text-[var(--color-text-accent-pink)]">臨時のお知らせ</h2>
-            <div className="mx-auto">
+            <div className="mx-auto button-shadow">
               <Zoom>
                 <img
                   src={info.src}
@@ -175,7 +175,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center text-center p-4">
         <Link href={ROUTES.TOPIC.ECOBAG}>    
-          <div className="border border-primary rounded-lg overflow-hidden shadow-[0_2px_8px_0_rgba(0,0,0,0.4)] active:shadow-[0_1px_2px_0_rgba(0,0,0,0.4)] active:translate-y-0.5 transition-shadow duration-100">
+          <div className="border border-primary button-shadow">
             <Image
               src={'/img/feature/eco-bag/eco-bag-banner.png'}
               width={364}
