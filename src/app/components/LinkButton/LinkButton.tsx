@@ -25,7 +25,7 @@ const LinkButton: React.FC<LinkButtonProps> = (
   return isExternal || isSpecialLink ? (
     <a
       href={linkHref}
-      className="px-4 py-2 bg-primary text-secondary font-extrabold rounded-lg inline-flex justify-center gap-1"
+      className="px-4 py-2 bg-primary text-secondary font-extrabold rounded-lg inline-flex justify-center gap-1 button-shadow"
       {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
     >
       {leftIcon && leftIcon}
@@ -35,7 +35,7 @@ const LinkButton: React.FC<LinkButtonProps> = (
   ) : (
     <Link
       href={linkHref}
-      className="px-4 py-2 bg-primary text-secondary font-extrabold rounded-lg inline-flex justify-center gap-1"
+      className="px-4 py-2 bg-primary text-secondary font-extrabold rounded-lg inline-flex justify-center gap-1 button-shadow"
     >
       {leftIcon && leftIcon}
       <span className="inline-flex items-center">{linkText}</span>

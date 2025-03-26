@@ -8,3 +8,7 @@ body {
   color: var(--primitive-black);
   background: var(--color-primary);
 }
+
+.button-shadow {
+  @apply rounded-lg overflow-hidden shadow-[0_2px_8px_0_rgba(0,0,0,0.4)] active:shadow-[0_1px_2px_0_rgba(0,0,0,0.4)] active:translate-y-0.5 transition-shadow duration-100;
+}
