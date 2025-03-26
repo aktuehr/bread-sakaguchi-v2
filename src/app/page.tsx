@@ -149,29 +149,32 @@ export default function Home() {
           </p>
         </div>
       </MenuSection>
-      <div className="p-4">
+      <div className="grid grid-cols-1 gap-4 p-4">
         <h2 className="font-bold text-primary">最新情報</h2>
-        <div className="flex gap-1">
-          <Image
-            src={'/img/instagram.png'}
-            width={150}
-            height={184}
-            style={{ width: '150px', height: '184px', objectFit: 'contain' }}
-            alt={"パン工房SAKAGUCHIのInstagramアカウントのQRコード"}
+        <div>最新情報はInstagramで随時更新しております。</div>
+        <div className="flex flex-col gap-4 items-center">
+          <a
+            href="https://www.instagram.com/bread_sakaguchi1985/"
+            target="_blank"  
+            rel="noopener noreferrer"
+            className="button-shadow"
+          >
+            <Image
+              src={'/img/instagram.png'}
+              width={150}
+              height={184}
+              style={{ width: '150px', objectFit: 'contain' }}
+              alt={"パン工房SAKAGUCHIのInstagramアカウントのQRコード"}
             />
-          <div className="flex flex-col gap-1 w-full">
-            <div>最新情報はInstagramで随時更新しております。</div>
-            <div className="p-1 grid gap-1">
-              <NewsListItem emoji="🏠" emojiLabel="家の絵文字">店内・店頭の様子</NewsListItem>
-              <NewsListItem emoji="🥐" emojiLabel="クロワッサンの絵文字">新作パン・期間限定パンのご紹介</NewsListItem>
-              <NewsListItem emoji="🍞" emojiLabel="食パンの絵文字">各種人気パンのご紹介</NewsListItem>
-              <NewsListItem emoji="📅" emojiLabel="カレンダーの絵文字">連休や年末年始等の営業のお知らせ</NewsListItem>
-            </div>
-            <div>
-              など、営業日は毎朝更新しております。フォローよろしくお願いします。
-            </div>
+          </a>
+          <div className="grid grid-cols-2 gap-1 w-full text-xs">
+            <NewsListItem emoji="🏠" emojiLabel="家の絵文字">店内・店頭の様子</NewsListItem>
+            <NewsListItem emoji="🥐" emojiLabel="クロワッサンの絵文字">新作パン・期間限定パンのご紹介</NewsListItem>
+            <NewsListItem emoji="🍞" emojiLabel="食パンの絵文字">各種人気パンのご紹介</NewsListItem>
+            <NewsListItem emoji="📅" emojiLabel="カレンダーの絵文字">連休や年末年始等の営業のお知らせ</NewsListItem>
           </div>
         </div>
+        <div>営業日は毎朝更新しております。フォローよろしくお願いします。</div>
       </div>
       <div className="flex flex-col items-center text-center p-4">
         <Link href={ROUTES.TOPIC.ECOBAG}>    
